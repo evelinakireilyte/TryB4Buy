@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+.item_info {
+  display: flex;
+  justify-content: left;
+}
+
+.item_top_section p,
+.item_info_bottom p {
+  margin: 3px;
+}
+
+.item_info h4 {
+  margin: 2px;
+  padding: 2px;
+}
+
+.item_info_section h4 {
+  width: 95px;
+}
+
+.item_top_section h3,
+.item_info_bottom h3 {
+  padding: 2px;
+}
+
+.item_top_section img {
+  max-height: 200px;
+  margin: 20px;
+}
+
+.item_top_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_info_bottom {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.owner_info {
+  margin-top: 40px;
+}
+
+section {
+  margin: 15px;
+}
+
+.item_info_section {
+  margin-top: 40px;
+}
+
+.reviews_list li {
+  list-style: none;
+  margin-left: -40px;
+}
+
+.reviews_wrapper {
+  margin-top: 40px;
+}

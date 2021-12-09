@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+.register_header {
+  h2 {
+    text-align: center;
+  }
+}
+
+.register_form_style input {
+  width: 250px;
+  display: flex;
+  justify-content: column;
+  height: 25px;
+  margin: 2px 0 10px 0;
+}
+
+.register_form_style {
+  .action {
+    margin-top: 20px;
+    height: 25px;
+  }
+}
+
+.register_form_style {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f3f4f6;
+  height: 900px;
+  img{
+    height: 500px;
+    border-radius: 2%;
+  }
+  p {
+    font-size: 30px;
+    margin: 0px;
+    color: #e51c23;
+    text-align: center;
+    padding: 20px;
+  }
+  
+}

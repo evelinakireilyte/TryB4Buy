@@ -1,0 +1,73 @@
+.card_list_wrapper {
+    margin-top: 70px;
+    width: 100%;
+    background-repeat: repeat;
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: space-evenly;
+    justify-content: center;
+    }
+    li {
+        list-style: none;
+    }
+    
+}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 1px solid #e51c23;
+  border-right: none;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: black;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #e51c23;
+  background: #f4f4f4;
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.search_wrap{
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.top_section_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.list_top_p {
+    font-size: 30px;
+    margin: 0px;
+    color: #e51c23;
+    text-align: center;
+    padding: 40px;
+  }
+
