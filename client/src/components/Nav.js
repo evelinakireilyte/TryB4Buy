@@ -27,7 +27,7 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
           <>
             <li>
               <Link to="/items/post">
-              <p>Post</p>
+                <p>Post</p>
               </Link>
             </li>
             <li>
@@ -35,17 +35,21 @@ const Nav = ({ isLoggedIn, setIsLoggedIn }) => {
             </li>
             <li>
               <Link to="/profile">
-              <p>Profile</p>
+                <p>Profile</p>
               </Link>
             </li>
           </>
         ) : (
           <>
             <li>
-              <Link to="/login"><p>Log In</p></Link>
+              <Link to="/login">
+                <p>Log In</p>
+              </Link>
             </li>
             <li>
-              <Link to="/register"><p>Register</p></Link>
+              <Link to="/register">
+                <p>Register</p>
+              </Link>
             </li>
           </>
         )}

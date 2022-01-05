@@ -3,7 +3,7 @@ import { useState } from 'react'
 import ItemForm from '../components/ItemForm.js'
 import { useNavigate } from 'react-router-dom'
 import { getToken, getUser } from '../helpers/auth.js'
-import image1 from "../styles/images/dbi-e-mailing.jpg"
+import image1 from '../styles/images/dbi-e-mailing.jpg'
 
 const ItemAdd = () => {
   const navigate = useNavigate()
@@ -20,7 +20,7 @@ const ItemAdd = () => {
   })
 
   const [errorInfo, setErrorInfo] = useState({})
-  const [ isError, setIsError ] = useState(false)
+  const [isError, setIsError] = useState(false)
 
   const handleError = (error) => {
     if (error.response) {
@@ -34,8 +34,8 @@ const ItemAdd = () => {
     const config = {
       method: 'post',
       url: '/api/items/',
-      headers: { 
-        Authorization: `Bearer ${getToken()}`, 
+      headers: {
+        Authorization: `Bearer ${getToken()}`,
         'Content-Type': 'application/json',
       },
       data: data,
@@ -64,11 +64,11 @@ const ItemAdd = () => {
 
   return (
     <div className="item_add_form">
-    <div> 
-          <p>Share  |  Connect  |  Earn</p>
-          <img src= { image1 }/>
-    </div>
-      <div >
+      <div>
+        <p>Share | Connect | Earn</p>
+        <img src={image1} />
+      </div>
+      <div>
         <form onSubmit={handleSubmit}>
           <div>
             <div>

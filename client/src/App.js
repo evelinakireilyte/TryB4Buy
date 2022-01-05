@@ -12,7 +12,7 @@ import ItemList from './pages/ItemList'
 import ItemShow from './pages/ItemShow'
 import ItemEdit from './pages/ItemEdit'
 // import NotFound from "./pages/NotFound"
-import Profile from "./pages/Profile"
+import Profile from './pages/Profile'
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)

@@ -3,14 +3,14 @@ import { useNavigate } from 'react-router-dom'
 import { setToken, setUser } from '../helpers/auth.js'
 import FormInput from '../components/FormInput.js'
 import axios from 'axios'
-import image5 from "../styles/images/gaming-newbies-stadia-videoSixteenByNineJumbo1600.jpg"
+import image5 from '../styles/images/gaming-newbies-stadia-videoSixteenByNineJumbo1600.jpg'
 
 const Login = ({ setIsLoggedIn }) => {
   const [data, setData] = useState({
-    username: '',
+    email: '',
     password: '',
   })
-  const [errorInfo, setErrorInfo] = useState({})
+
   const [isError, setIsError] = useState(false)
   const navigate = useNavigate()
 
@@ -27,7 +27,8 @@ const Login = ({ setIsLoggedIn }) => {
     }
 
     try {
-      const response = await axios(config).catch(handleError)
+      const response = await axios(config)
+      console.log(response.data)
       setToken(response.data.token)
       setUser(response.data.id)
       setIsError(false)
@@ -35,13 +36,6 @@ const Login = ({ setIsLoggedIn }) => {
       navigate('/')
     } catch (err) {
       console.log(err)
-      setIsError(true)
-    }
-  }
-
-  const handleError = (error) => {
-    if (error.response) {
-      setErrorInfo(error.response.data)
       setIsError(true)
     }
   }
@@ -54,13 +48,14 @@ const Login = ({ setIsLoggedIn }) => {
     })
   }
 
-  const formInputProps = { data, errorInfo, handleFormChange }
+  const formInputProps = { data, handleFormChange }
 
   return (
     <div className="login_wrapper">
-            <div><p> Here you can give, take or do both!</p>
-            <img src= { image5 }/>
-            </div>
+      <div>
+        <p> Here you can give, take or do both!</p>
+        <img src={image5} />
+      </div>
       <div className="login_form_style">
         <form onSubmit={handleSubmit}>
           <div className="login_header">

@@ -1,34 +1,32 @@
 .profile {
-    h1 {
-        text-align: center;
-        color: #e51c23;
-        margin: 30px;
-    }
-    h3 {
-        margin: 10px;
-        font-size: 20px;
-    }
+  h1 {
+    text-align: center;
+    color: #e51c23;
+    margin: 30px;
+  }
+  h3 {
+    margin: 10px;
+    font-size: 20px;
+  }
 }
 
-
 .user_items {
-    margin-top: 70px;
-    width: 100%;
-    background-repeat: repeat;
-    border: 1px solid black;
-    ul {
+  width: 100%;
+  background-repeat: repeat;
+  border: 1px solid #989898;
+  ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: space-evenly;
     justify-content: center;
-    }
-    li {
-        list-style: none;
-    }
-
-    
+  }
+  li {
+    list-style: none;
+  }
 }
 
 .user_wishlist {
-    height: 200px;
+  height: 280px;
+  border: 1px solid #989898;
+  margin-bottom: 50px;
 }

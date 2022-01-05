@@ -8,6 +8,7 @@ from rest_framework.response import Response
 from rest_framework import status  # status code
 from .serializers import PopulatedReviewSerializer, ReviewSerializer 
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from items.single_serializer import ItemSerializer
 
 
 class ReviewDetailView(APIView):
@@ -32,15 +33,19 @@ class ReviewDetailView(APIView):
             return Response(updated_review.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
     def get(self, request, pk):
-        review = Review.objects.get(id=pk)
-        serialized_review = PopulatedReviewSerializer(review)
-        return Response(serialized_review.data, status=status.HTTP_200_OK)
+        try:
+            review = Review.objects.get(id=pk)
+            serialized_review = PopulatedReviewSerializer(review)
+            return Response(serialized_review.data, status=status.HTTP_200_OK)
+        except:
+            return Response(status=status.HTTP_404_NOT_FOUND)
 
 
 class ReviewListView(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly,)
     # will kick in if someone tries to POST
     def post(self, request):
+        request.data["item"] = ItemSerializer(source="item_set", data=request.data)
         request.data["owner"] = request.user.id
         review = ReviewSerializer(data=request.data)
         if review.is_valid():
@@ -48,9 +53,23 @@ class ReviewListView(APIView):
             return Response(review.data, status=status.HTTP_201_CREATED)
         else:
             return Response(review.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+    
+    def post(self, request):
+        try:
+            review = ReviewSerializer(data=request.data)
+            if review.is_valid():
+                review.save(owner=request.user)
+                return Response(review.data, status=status.HTTP_201_CREATED)
+        except:
+            return Response(status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
     # responder to GET
     def get(self, request):
-        reviews = Review.objects.all()
-        serialized_reviews = PopulatedReviewSerializer(reviews, many=True)
-        return Response(serialized_reviews.data, status=status.HTTP_200_OK)
+        try:
+            reviews = Review.objects.all()
+            serialized_reviews = PopulatedReviewSerializer(reviews, many=True)
+            return Response(serialized_reviews.data, status=status.HTTP_200_OK)
+        except:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+

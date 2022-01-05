@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import FormInput from '../components/FormInput.js'
 import axios from 'axios'
-import { setToken } from '../helpers/auth'
-import image1 from "../styles/images/gaming.jpg"
+// import { setToken } from '../helpers/auth'
+import image1 from '../styles/images/gaming.jpg'
 
 const Register = () => {
   const [data, setData] = useState({
     username: '',
     email: '',
     password: '',
-    passwordConfirmation: '',
+    password_confirmation: '',
   })
 
   const [errorInfo, setErrorInfo] = useState({})
@@ -28,10 +28,10 @@ const Register = () => {
       },
       data: data,
     }
-
+    console.log(data)
     try {
       const response = await axios(config).catch(handleError)
-      setToken(response.data.token)
+      console.log(response.data)
       setIsError(false)
       navigate('/login')
     } catch (err) {
@@ -57,10 +57,10 @@ const Register = () => {
 
   return (
     <div className="register_form_style">
-          <div>  
-            <p> Thinking of buying? Think no more and try it first!</p>
-          <img src= { image1 }/>
-            </div>
+      <div>
+        <p> Thinking of buying? Think no more and try it first!</p>
+        <img src={image1} />
+      </div>
       <div className="form">
         <form onSubmit={handleSubmit}>
           <div className="register_header">

@@ -15,10 +15,16 @@ from .serializers import PopulatedUserProfileSerializer
 from django.core import serializers
 from items.serializers import ItemSerializer
 
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication 
+
+class CsrfExemptSessionAuthentication(SessionAuthentication):
+
+    def enforce_csrf(self, request):
+        return  # To not perform the csrf check previously happening
 
 
 class RegisterView(APIView):
-
+    authentication_classes = (CsrfExemptSessionAuthentication, BasicAuthentication)
     def post(self, request):
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
@@ -29,7 +35,7 @@ class RegisterView(APIView):
 
 
 class LoginView(APIView):
-
+    authentication_classes = (CsrfExemptSessionAuthentication, BasicAuthentication)
     def post(self, request):
 
         email = request.data.get('email')

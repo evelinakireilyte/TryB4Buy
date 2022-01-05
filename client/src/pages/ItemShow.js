@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-import Button from 'react-bootstrap/Button'
 import { getToken } from '../helpers/auth'
 import { Link } from 'react-router-dom'
 import DeleteItem from '../components/DeleteItem.js'
+import Reviews from '../components/Reviews.js'
 
 const ItemShow = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -20,7 +20,6 @@ const ItemShow = () => {
   const [reviews, setReviews] = useState([])
   const [owner, setOwner] = useState([])
   const { id } = useParams()
-
 
   async function fetchItem(id) {
     const config = {
@@ -55,19 +54,22 @@ const ItemShow = () => {
             </div>
             {isLoggedIn ? (
               <>
-            <div>
-            <Button variant="outline-primary" size="sm">Watch this item</Button>
-            </div>
-            <div>
-            <Link to={`/items/${id}/edit`}>
-            <Button variant="outline-primary" size="sm">Edit Post
-            </Button>
-            </Link>
-            </div>
-            <div>
-            <DeleteItem/>
-            </div>
-            </>
+                <div className="item_show_buttons">
+                  <button variant="outline-primary" size="sm">
+                    Watch this item
+                  </button>
+                  <div>
+                    <Link to={`/items/${id}/edit`}>
+                      <button variant="outline-primary" size="sm">
+                        Edit Post
+                      </button>
+                    </Link>
+                  </div>
+                  <div>
+                    <DeleteItem />
+                  </div>
+                </div>
+              </>
             ) : (
               <></>
             )}
@@ -100,15 +102,19 @@ const ItemShow = () => {
             </div>
           </div>
           <div className="reviews_wrapper">
+            <h3>Leave a review</h3>
+            <Reviews />
             <h3>Reviews</h3>
-            <ul>
-              {reviews.map((review) => (
-                <li key={review.id} className="reviews_list"> 
-                  <p>{review.owner.username}</p>
-                  <p>{review.text}</p>
-                </li>
-              ))}
-            </ul>
+            <div className="reviews_list">
+              <ul>
+                {reviews.map((review) => (
+                  <li key={review.id}>
+                    <p>{review.owner.username}</p>
+                    <p>{review.text}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>

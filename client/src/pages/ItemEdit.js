@@ -20,9 +20,8 @@ const ItemEdit = () => {
     image: '',
   })
 
-
   const [errorInfo, setErrorInfo] = useState({})
-  const [ isError, setIsError ] = useState(false)
+  const [isError, setIsError] = useState(false)
 
   useEffect(() => {
     async function fetchItem(id) {
@@ -45,7 +44,7 @@ const ItemEdit = () => {
     }
   }
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async () => {
     // event.preventDefault()
     const config = getAxiosPutRequestConfig(`items/${id}/`, data, 'put')
     navigate(`/items/${id}`)
@@ -69,11 +68,10 @@ const ItemEdit = () => {
 
   return (
     <div className="item-edit">
-    
       <div className="item-edit_form">
         <form className="card-form" onSubmit={handleSubmit}>
           <div className="card">
-              <h2 className="card-heading">Edit Your Item</h2>
+            <h2 className="card-heading">Edit Your Item</h2>
           </div>
           <ItemForm
             className="input-field"

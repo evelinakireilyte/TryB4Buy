@@ -1,0 +1,72 @@
+[
+{
+  "model": "items.item",
+  "pk": 3,
+  "fields": {
+    "title": "Robot Vacuum &  Mop Bundle",
+    "make": "iRobot",
+    "retail_price": "1879.00",
+    "description": "Takes care of the cleaning from start to finish - emptying on its own into a disposable bag that holds 30 bins of dirt, dust, and hair, so you don’t have to think about vacuuming for weeks at a time. The enclosed bag traps dust, so it can’t escape into the air. PerfectEdge™ Technology finds dirt where it hides using Maximized-Edge Design and a specially angled corner brush to reach deep into corners. Advanced sensors constantly scan ahead of the robot, helping it to get close to walls and deep into corners.",
+    "image": "http://res.cloudinary.com/eevelynaa1/image/upload/v1639104841/SEI_Project3/bxipc6vyw9hdxjxkojjw.jpg",
+    "owner": 1,
+    "try_it_charge": "10.00",
+    "location": "Cambridge"
+  }
+},
+{
+  "model": "items.item",
+  "pk": 4,
+  "fields": {
+    "title": "Ride-on Lawn Mower",
+    "make": "John Deere",
+    "retail_price": "2595.00",
+    "description": "The John Deere X127 stands for dependability, durability and power in eevry aspect of its design, including a fully welded steel frame and a cast-iron front axle. An ergonomic operator station, a powerful engine with an infinite choice of ground speeds, and high quality headlights make the 127 lawn tractor a breeze to operate and a joy to own.",
+    "image": "http://res.cloudinary.com/eevelynaa1/image/upload/v1639105255/SEI_Project3/scqwqoq8benc2pmgx4im.jpg",
+    "owner": 1,
+    "try_it_charge": "15.00",
+    "location": "Cambridge"
+  }
+},
+{
+  "model": "items.item",
+  "pk": 5,
+  "fields": {
+    "title": "Kitesurf Kite",
+    "make": "Core Nexus",
+    "retail_price": "999.00",
+    "description": "The Nexus 2, is technically billed as two kites in one, but we found at least three things it’s really good at. Just set the kite’s CIT Modes to match the beach conditions and go have fun. Be it hard cutbacks on your favourite wave or a sublime backroll, the Nexus 2 will excite your senses.",
+    "image": "http://res.cloudinary.com/eevelynaa1/image/upload/v1639105440/SEI_Project3/fsozcrmvmgha1kcgqach.jpg",
+    "owner": 1,
+    "try_it_charge": "15.00",
+    "location": "Norwich"
+  }
+},
+{
+  "model": "items.item",
+  "pk": 6,
+  "fields": {
+    "title": "Evo Elite 4.1 RGB Gaming Chair",
+    "make": "X Rocker",
+    "retail_price": "349.00",
+    "description": "It’s a super-padded pedestal chair that’s designed just for gaming! It has built-in 4.1 sound, tri-motor vibration feedback, and it lights up with more colours than a ‘60s album cover!",
+    "image": "http://res.cloudinary.com/eevelynaa1/image/upload/v1639105782/SEI_Project3/pcwfrd9tzpjeo6rnsocz.jpg",
+    "owner": 1,
+    "try_it_charge": "10.00",
+    "location": "London"
+  }
+},
+{
+  "model": "items.item",
+  "pk": 7,
+  "fields": {
+    "title": "Bean-to-Cup Espresso Machine",
+    "make": "De'Longhi",
+    "retail_price": "999.00",
+    "description": "Bean-to-cup coffee machine – beautifully designed (as you’d expect, it is made by De’Longhi), with bean hopper; built-in grinder; progress, pressure and menu displays; Sensor Grinding Technology; Smart Tamping Station; dynamic pre-infusion; active temperature control and LatteCrema system.",
+    "image": "http://res.cloudinary.com/eevelynaa1/image/upload/v1639106470/SEI_Project3/bn0c7twt5qs5b7huhn6v.jpg",
+    "owner": 1,
+    "try_it_charge": "7.00",
+    "location": "London"
+  }
+}
+]

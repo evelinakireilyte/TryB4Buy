@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Review(models.Model):
-    text = models.TextField()
+    text = models.TextField(max_length=300)
     item = models.ForeignKey("items.Item", related_name="reviews", on_delete=models.CASCADE)
     owner = models.ForeignKey("jwt_auth.User", on_delete=models.CASCADE)
 

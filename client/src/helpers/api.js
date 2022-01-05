@@ -54,7 +54,7 @@ const makeAxiosRequest = async (url, data) => {
 export const getAxiosRequestConfig = (requestUrl, data, method = 'post') => {
   const config = {
     method,
-    url: 'api/items/',
+    url: `${baseUrl}/${requestUrl}`,
     headers: {
       Authorization: `Bearer ${getToken()}`,
       'Content-Type': 'application/json',
