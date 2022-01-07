@@ -33,16 +33,22 @@ const Profile = () => {
     <div className="profile">
       <h1>Hi {username}!</h1>
       <h3>Wishlist</h3>
-      <div className="user_wishlist">{/* { To be completed} */}</div>
+      <div className="user_wishlist">
+        <p> Your wishlist is currently empty...</p>
+      </div>
       <h3>Posts</h3>
       <div className="user_items">
-        <ul>
-          {items.map((item) => (
-            <li key={item.id}>
-              <ItemCard {...item} />
-            </li>
-          ))}
-        </ul>
+        {items.length > 0 ? (
+          <ul>
+            {items.map((item) => (
+              <li key={item.id}>
+                <ItemCard {...item} />
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p> You have not made any posts yet...</p>
+        )}
       </div>
     </div>
   )

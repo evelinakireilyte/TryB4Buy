@@ -2,7 +2,6 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { getAxiosRequestConfig } from '../helpers/api'
 import { useState } from 'react'
-import ReactStars from 'react-rating-stars-component'
 import { getUser } from '../helpers/auth.js'
 
 const Reviews = () => {

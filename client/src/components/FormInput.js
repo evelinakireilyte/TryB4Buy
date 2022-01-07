@@ -1,4 +1,4 @@
-const FormInput = ({ name, data, id, type, errorInfo, handleFormChange }) => {
+const FormInput = ({ name, data, id, type, handleFormChange }) => {
   return (
     <div className="field">
       <label htmlFor={name}>{name}</label>

@@ -6,19 +6,17 @@ import { useParams, useNavigate } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 
 const DeleteItem = () => {
-  const [errorInfo, setErrorInfo] = useState({})
   const [isError, setIsError] = useState(false)
   const { id } = useParams()
   const navigate = useNavigate()
 
   const handleError = (error) => {
     if (error.response) {
-      setErrorInfo(error.response.data)
       setIsError(true)
     }
   }
 
-  const handleDelete = async (event) => {
+  const handleDelete = async () => {
     const config = {
       method: 'delete',
       url: `/api/items/${id}`,
@@ -28,13 +26,8 @@ const DeleteItem = () => {
       },
     }
     const response = await axios(config).catch(handleError)
-    console.log('handle delete')
+    console.log(response, 'handle delete')
     navigate('/items')
-    try {
-      setIsError(false)
-    } catch (err) {
-      console.log(err)
-    }
   }
 
   return (
@@ -42,6 +35,13 @@ const DeleteItem = () => {
       <Button variant="outline-primary" size="sm" onClick={handleDelete}>
         Delete Post
       </Button>
+      {isError ? (
+        <div className="error">
+          <p>There appears to have been an error. Please try again.</p>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   )
 }

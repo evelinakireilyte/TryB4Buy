@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9099e961.chunk.css",
+    "main.js": "/static/js/main.69ddfbd3.chunk.js",
+    "main.js.map": "/static/js/main.69ddfbd3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.776c1e0d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.776c1e0d.js.map",
+    "static/js/2.00ebcec6.chunk.js": "/static/js/2.00ebcec6.chunk.js",
+    "static/js/2.00ebcec6.chunk.js.map": "/static/js/2.00ebcec6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9099e961.chunk.css.map": "/static/css/main.9099e961.chunk.css.map",
+    "static/js/2.00ebcec6.chunk.js.LICENSE.txt": "/static/js/2.00ebcec6.chunk.js.LICENSE.txt",
+    "static/media/M-205-1687x669.999bca83.jpg": "/static/media/M-205-1687x669.999bca83.jpg",
+    "static/media/Screenshot 2021-12-09 at 14.46.46.66ccf7eb.png": "/static/media/Screenshot 2021-12-09 at 14.46.46.66ccf7eb.png",
+    "static/media/best-ride-on-mower.319b4e7f.jpg": "/static/media/best-ride-on-mower.319b4e7f.jpg",
+    "static/media/dbi-e-mailing.754233b1.jpg": "/static/media/dbi-e-mailing.754233b1.jpg",
+    "static/media/gaming-newbies-stadia-videoSixteenByNineJumbo1600.c8f69105.jpg": "/static/media/gaming-newbies-stadia-videoSixteenByNineJumbo1600.c8f69105.jpg",
+    "static/media/gaming.28bc6d03.jpg": "/static/media/gaming.28bc6d03.jpg",
+    "static/media/k2_items_src_904cf04bd99b7fdec4c9f8755ddb6a17.6cfed202.jpg": "/static/media/k2_items_src_904cf04bd99b7fdec4c9f8755ddb6a17.6cfed202.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.776c1e0d.js",
+    "static/js/2.00ebcec6.chunk.js",
+    "static/css/main.9099e961.chunk.css",
+    "static/js/main.69ddfbd3.chunk.js"
+  ]
+}
