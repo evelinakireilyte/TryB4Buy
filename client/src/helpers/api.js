@@ -6,17 +6,18 @@ const baseUrl = '/api'
 export const fetchItems = async () => {
   const config = {
     method: 'get',
-    url: `${baseUrl}/items`,
+    url: `${baseUrl}/items/all/`,
     headers: {},
   }
   const response = await axios(config)
+  console.log(response)
   return response.data
 }
 
 export const fetchItem = async (id) => {
   const config = {
     method: 'get',
-    url: `${baseUrl}/items/${id}`,
+    url: `${baseUrl}/items/detail/${id}`,
     headers: {},
   }
   const response = await axios(config)
@@ -27,7 +28,7 @@ export const fetchItem = async (id) => {
 export const deleteItem = async (id) => {
   const config = {
     method: 'delete',
-    url: `${baseUrl}/items/${id}/`,
+    url: `${baseUrl}/items/detail/${id}/`,
     headers: {
       Authorisation: `Bearer ${getToken()}`,
     },

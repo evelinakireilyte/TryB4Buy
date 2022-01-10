@@ -33,7 +33,7 @@ const ItemAdd = () => {
     event.preventDefault()
     const config = {
       method: 'post',
-      url: '/api/items/',
+      url: '/api/items/all',
       headers: {
         Authorization: `Bearer ${getToken()}`,
         'Content-Type': 'application/json',

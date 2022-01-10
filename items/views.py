@@ -26,6 +26,7 @@ class ItemListView(APIView):
     # responder to GET / all items
     def get(self, request):
         items = Item.objects.all()
+        print('Hello',items)
         serialized_items = PopulatedItemSerializer(items, many=True)
         return Response(serialized_items.data, status=status.HTTP_200_OK)
 

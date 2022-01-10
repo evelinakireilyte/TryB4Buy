@@ -9,7 +9,7 @@ import ItemAdd from './pages/ItemAdd'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ItemList from './pages/ItemList'
-import ItemShow from './pages/ItemShow'
+import ItemShow from './pages/itemshow'
 import ItemEdit from './pages/ItemEdit'
 // import NotFound from "./pages/NotFound"
 import Profile from './pages/Profile'

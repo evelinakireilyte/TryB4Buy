@@ -19,7 +19,7 @@ const DeleteItem = () => {
   const handleDelete = async () => {
     const config = {
       method: 'delete',
-      url: `/api/items/${id}`,
+      url: `/api/items/detail/${id}`,
       headers: {
         Authorization: `Bearer ${getToken()}`,
         'Content-Type': 'application/json',

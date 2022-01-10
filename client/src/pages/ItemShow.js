@@ -24,11 +24,12 @@ const ItemShow = () => {
   async function fetchItem(id) {
     const config = {
       method: 'get',
-      url: `/api/items/${id}`,
+      url: `/api/items/detail/${id}`,
       headers: {},
     }
 
     const response = await axios(config)
+    console.log(response)
     setItem(response.data)
     setReviews(response.data.reviews)
     setOwner(response.data.owner)
@@ -107,7 +108,7 @@ const ItemShow = () => {
             <h3>Reviews</h3>
             <div className="reviews_list">
               <ul>
-                {reviews.map((review) => (
+                {reviews?.map((review) => (
                   <li key={review.id}>
                     <p>{review.owner.username}</p>
                     <p>{review.text}</p>

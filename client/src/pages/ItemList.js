@@ -31,7 +31,7 @@ const ItemList = () => {
       )
     )
   }, [searchValue])
-
+  console.log(items)
   return (
     <>
       <div className="item_list_wrapper">
