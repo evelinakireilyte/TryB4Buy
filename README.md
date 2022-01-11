@@ -32,20 +32,6 @@ Register and login to explore the app.
 
 ## Getting Started
 
-Clone or download the repo then do the following in Terminal:
-
-Install back-end dependencies: `pipenv`
-Enter Shell for project: `pipenv shell`
-Make Migrations: `python manage.py makemigrations`
-Migrate: python manage.py migrate
-Load Seed data for items: `python manage.py loaddata items/seeds.json`
-Start back-end server: `python manage.py runserver`
-Change into front-end directory: `cd frontend`
-Install front-end dependencies: `yarn`
-Start front-end server: `yarn start`
-
-## Installation
-
 Enter the src directory
 
 ### Backend
@@ -158,10 +144,10 @@ npm run build
 
 ### Timetable
 
-Day 1 - Project planning
-Day 2-3 - Back-end
-Day 3-7 - Front-end
-Day 8 - Styling
+- Day 1 - Project planning
+- Day 2-3 - Back-end
+- Day 3-7 - Front-end
+- Day 8 - Styling
 
 ### Day 1 - Project planning:
 
@@ -175,7 +161,7 @@ Once I had a clear picture on Django models I wanted to implement, I moved on to
 
 ### Wireframes
 
-<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.25_vd5xwc.png" height="500"> <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.54_b78bar.png" height="500">
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.25_vd5xwc.png" height="400"> <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.54_b78bar.png" height="400">
 
 I set out a timeframe for work to be completed in order to implement the back-end and front-end with desired features, leaving time to apply styling. Setting out clear working hours and keeping on top of the plan was crucial to building an application in only 8 days.
 
@@ -202,16 +188,19 @@ As originally planned, styling was completed using SASS to achieve a simplistic 
 
 ### Bugs
 
+- When registering, the user is not given a specific error message explaining that the given password is not strong enough.
+- The page does not always reload after editing an item to display most up to date information.
+
 ### Challenges
 
-Throughout the project I would question myself to make sure I was not spending too much time trying to identify the piece of a broken code. I believe at times I should have seeked help earlier to avoid the loss of time that leads to stress when trying to meet deadlines
-Being unwell, I have missed a few days worth of classes just before the project week, therefore I had to learn Django authorisation, database seeding and look into implementing relationships independently.
+- Throughout the project I would question myself to make sure I was not spending too much time trying to identify the piece of a broken code. I believe at times I should have seeked help earlier to avoid the loss of time that leads to stress when trying to meet deadlines
+- Being unwell, I have missed a few days worth of classes just before the project week, therefore I had to learn Django authorisation, database seeding and look into implementing relationships independently.
 
 ### Wins
 
-Unique project idea, that could prove as a great business opportunity
-Successfully build a full stack application with CRUD functionality
-Although there is always room for improvement, I believe I have presented great time management skills and delivered a full stack project in only 8 days
+- Unique project idea, that could prove as a great business opportunity
+- Successfully build a full stack application with CRUD functionality
+- Although there is always room for improvement, I believe I have presented great time management skills and delivered a full stack project in only 8 days
 
 ### Key Learnings
 
@@ -220,3 +209,9 @@ I have had a great opportunity to work independently, plan my time, troubleshoot
 This project was a great opportunity to solidify the knowledge using Python and Django - SQL database, to build the back-end.
 
 ### Future Improvements
+
+- Complete profile page design to make it more presentable and user friendly.
+- Add a wishlist feature to allow users to save items of interest.
+- Add notification to inform users of successful registration before or after redirecting to the log-in page.
+- Adding ability for users to upload a profile picture.
+- Add user reliability rating.
