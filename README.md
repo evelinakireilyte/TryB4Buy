@@ -153,13 +153,13 @@ npm run build
 
 I started the planning process by defining relationships between items, user, reviews and making a diagram to aid in the development of the back-end database architecture.
 
-### ERD (Entity Relationship Diagram)
+#### ERD (Entity Relationship Diagram)
 
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641903423/github/tryb4buy_2_b2asup.png" width="500">
 
 Once I had a clear picture on Django models I wanted to implement, I moved on to making wireframes for the front-end using Lucid.
 
-### Wireframes
+#### Wireframes
 
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.25_vd5xwc.png" height="400"> <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.54_b78bar.png" height="400">
 
@@ -169,7 +169,7 @@ I set out a timeframe for work to be completed in order to implement the back-en
 
 This was my first experience of creating a back-end using Python. Django and Django REST Framework was used to create a PostgreSQL database with RESTful features. I have started the process by building my models, views and serialisers. The use of Insomnia has allowed me to test my back-end requests and make sure all relationships between models were set up correctly, returning desired information.
 
-### Code Snippet - Items model, serializers, get and post request responders
+#### Code Snippet - Items model, serializers, get and post request responders
 
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904738/github/Screenshot_2022-01-11_at_12.38.03_qazq5p.png" width="700">
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904737/github/Screenshot_2022-01-11_at_12.37.54_o4ey6k.png" width="700"><img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904738/github/Screenshot_2022-01-11_at_12.38.29_nl7vnl.png" width="700">
@@ -178,7 +178,7 @@ This was my first experience of creating a back-end using Python. Django and Dja
 
 The Frontend was built by first installing React with all dependencies required for the initial work. React Hooks and Axios were used for data requests from the back-end. React-router-dom was used for page navigation in React. I have first worked on user registration and login implementation and from there moved on to creating item cards, item browsing list, item description page and editing page. Browsing page was built to include a search bar to help users find specific items they are interested in. On day 6 I realised that I will not be able to finish off the user profile page, reviews and wishlist features as I have underestimated the amount of time it takes to implement all I have aimed for. From there on, I have decided to focus on making sure the app is functional and basic features such as posting, editing, updating and deleting of ads are in place and move on to styling.
 
-### Code Snippet - Item search bar implementation
+#### Code Snippet - Item search bar implementation
 
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641905830/github/Screenshot_2022-01-11_at_12.56.57_yfhlng.png" width="700">
 
