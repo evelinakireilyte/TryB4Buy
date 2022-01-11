@@ -9,9 +9,8 @@ import ItemAdd from './pages/ItemAdd'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ItemList from './pages/ItemList'
-import ItemShow from './pages/itemshow'
+import ItemShow from './pages/ItemShow'
 import ItemEdit from './pages/ItemEdit'
-// import NotFound from "./pages/NotFound"
 import Profile from './pages/Profile'
 
 function App() {

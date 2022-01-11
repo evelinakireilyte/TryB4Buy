@@ -17,7 +17,7 @@ export const fetchItems = async () => {
 export const fetchItem = async (id) => {
   const config = {
     method: 'get',
-    url: `${baseUrl}/items/detail/${id}`,
+    url: `${baseUrl}/items/detail/${id}/`,
     headers: {},
   }
   const response = await axios(config)

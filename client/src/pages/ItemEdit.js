@@ -27,7 +27,7 @@ const ItemEdit = () => {
     async function fetchItem(id) {
       const config = {
         method: 'get',
-        url: `/api/items/detail/${id}`,
+        url: `/api/items/detail/${id}/`,
         headers: {},
       }
 

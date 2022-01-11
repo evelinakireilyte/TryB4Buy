@@ -6,6 +6,6 @@ from .views import ItemDetailView
 urlpatterns = [
     path('home/', views.home),
     path('about/', views.about),
-    path('detail/<int:pk>', ItemDetailView.as_view()),
+    path('detail/<int:pk>/', ItemDetailView.as_view()),
     path('all/', ItemListView.as_view()),
 ]
