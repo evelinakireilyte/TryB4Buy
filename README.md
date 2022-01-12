@@ -26,7 +26,8 @@ TryB4Buy is an advertising application allowing users to post items they own, pr
 
 The application was deployed through Heroku, using MongoDB Atlas to host data in the cloud.
 
-You will find the deployed app here: TryB4Buy
+You will find the deployed app here: [TryB4Buy](https://tryb4buy.herokuapp.com/)
+
 
 Register and login to explore the app.
 
