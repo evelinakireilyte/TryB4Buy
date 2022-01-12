@@ -20,7 +20,7 @@
 
 ## Project Overview
 
-TryB4Buy is an advertising application allowing users to post items they own, providing other users with an opportunity to try them for a fixed fee before making a commitment to purchase it. TryB4Buy is a full stack application with CRUD functionality built using Python and Django for the back-end and user interface built using React.js. This was a solo project built in 8 days as part of a Software Engineering Immersive course.
+TryB4Buy is an advertising application allowing users to post items they own, providing other users with an opportunity to try them for a fixed fee before making a commitment to purchase it. TryB4Buy is a full stack application with CRUD functionality built using Python and Django for the back-end and user interface built using React.js. This was my final, solo project built in 8 days as part of a Software Engineering Immersive course.
 
 ## Deployment
 
@@ -102,11 +102,11 @@ npm run build
 
 ## Project Brief
 
-- Build a full-stack application by making my own backend and your own front-end
-- Use a Python Django API using Django REST Framework to serve data from a Postgres database
-- Consume my API with a separate front-end built with React
-- Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models
-- Implement thoughtful user stories/wireframes that are significant enough to help meet the deadline and implement core functionalities
+- Build a full-stack application by making my own backend and your own front-end.
+- Use a Python Django API using Django REST Framework to serve data from a Postgres database.
+- Consume my API with a separate front-end built with React.
+- Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models.
+- Implement thoughtful user stories/wireframes that are significant enough to help meet the deadline and implement core functionalities.
 - Be deployed online so it's publicly accessible.
 
 ## Technologies used
@@ -135,7 +135,7 @@ npm run build
 - Yarn
 - Insomnia
 - Git
-- Github
+- GitHub
 - Cloudinary (media hosting)
 - Heroku (deployment)
 - Trello Board (planning and timeline)
@@ -199,13 +199,13 @@ As originally planned, styling was completed using SASS to achieve a simplistic 
 
 ### Wins
 
-- Unique project idea, that could prove as a great business opportunity
-- Successfully build a full stack application with CRUD functionality
-- Although there is always room for improvement, I believe I have presented great time management skills and delivered a full stack project in only 8 days
+- Unique project idea, that could prove as a great business opportunity.
+- Successfully build a full stack application with CRUD functionality.
+- Although there is always room for improvement, I believe I have presented great time management skills and delivered a full stack project in only 8 days.
 
 ### Key Learnings
 
-I have had a great opportunity to work independently, plan my time, troubleshoot and make decisions which directly affected the final result. I was happy to be able to build it all from scratch utilising all the knowledge learned throughout the course and trust my own ability to manage the project as well as work on implementation.
+I have had a great opportunity to work independently, plan my time, troubleshoot and make decisions which directly affected the final result. I was happy to be able to build it all from scratch, utilising all the knowledge learned throughout the course and trust my own ability to manage the project as well as work on implementation.
 
 This project was a great opportunity to solidify the knowledge using Python and Django - SQL database, to build the back-end.
 
@@ -213,6 +213,6 @@ This project was a great opportunity to solidify the knowledge using Python and 
 
 - Complete profile page design to make it more presentable and user friendly.
 - Add a wishlist feature to allow users to save items of interest.
-- Add notification to inform users of successful registration before or after redirecting to the log-in page.
+- Add a notification to inform users of successful registration before or after redirecting to the log-in page.
 - Adding ability for users to upload a profile picture.
-- Add user reliability rating.
+- Add a user reliability rating.
