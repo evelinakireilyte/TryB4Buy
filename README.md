@@ -152,7 +152,12 @@ npm run build
 
 ### Day 1 - Project planning:
 
-I started the planning process by defining relationships between items, user, reviews and making a diagram to aid in the development of the back-end database architecture.
+I set out a timeframe for work to be completed in order to implement the back-end and front-end with desired features, leaving time to apply styling for which I used Trello board. Setting out clear working hours and keeping on top of the plan was crucial to building an application in only 8 days. 
+
+#### Trello board
+<img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1642009899/Screenshot_2022-01-12_at_17.50.25_oxfvbn.png" width="500">
+
+Other planning tasks involved defining relationships between items, user, reviews and making a diagram to aid in the development of the back-end database architecture. 
 
 #### ERD (Entity Relationship Diagram)
 
@@ -163,8 +168,6 @@ Once I had a clear picture on Django models I wanted to implement, I moved on to
 #### Wireframes
 
 <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.25_vd5xwc.png" height="400"> <img src="https://res.cloudinary.com/eevelynaa1/image/upload/v1641904209/github/Screenshot_2022-01-11_at_12.29.54_b78bar.png" height="400">
-
-I set out a timeframe for work to be completed in order to implement the back-end and front-end with desired features, leaving time to apply styling. Setting out clear working hours and keeping on top of the plan was crucial to building an application in only 8 days.
 
 ### Day 2-3 - Back-end:
 
