@@ -195,7 +195,7 @@ As originally planned, styling was completed using SASS to achieve a simplistic 
 
 ### Challenges
 
-- Throughout the project I would question myself to make sure I was not spending too much time trying to identify the piece of a broken code. I believe at times I should have seeked help earlier to avoid the loss of time that leads to stress when trying to meet deadlines
+- Throughout the project I would question myself to make sure I was not spending too much time trying to identify the piece of a broken code. I believe at times I should have seeked help earlier to avoid the loss of time that leads to stress when trying to meet deadlines.
 - Being unwell, I have missed a few days worth of classes just before the project week, therefore I had to learn Django authorisation, database seeding and look into implementing relationships independently.
 
 ### Wins
