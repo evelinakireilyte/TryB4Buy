@@ -100,7 +100,7 @@ npm run build
 
 ## Project Brief
 
-- Build a full-stack application by making my own backend and your own front-end.
+- Build a full-stack application by making my own backend and front-end.
 - Use a Python Django API using Django REST Framework to serve data from a Postgres database.
 - Consume my API with a separate front-end built with React.
 - Be a complete product which most likely means multiple relationships and CRUD functionality for at least a couple of models.
